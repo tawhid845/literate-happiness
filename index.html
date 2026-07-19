@@ -9,7 +9,8 @@
         body { background-color: #0d0e15; color: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; background-image: radial-gradient(circle at center, #1a1c2e 0%, #0d0e15 100%); }
         .card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(0, 242, 254, 0.2); padding: 40px 30px; border-radius: 20px; width: 100%; max-width: 420px; text-align: center; box-shadow: 0 0 30px rgba(0, 242, 254, 0.1); backdrop-filter: blur(10px); position: relative; }
         .card::before { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, #00f2fe, #4facfe, #ff007f); border-radius: 22px; z-index: -1; opacity: 0.3; filter: blur(10px); }
-        .profile-img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #00f2fe; margin-bottom: 20px; box-shadow: 0 0 20px rgba(0, 242, 254, 0.5); object-fit: cover; background-color: #1a1c2e; }
+        .profile-img-blank { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #00f2fe; margin: 0 auto 20px auto; box-shadow: 0 0 20px rgba(0, 242, 254, 0.3); background: rgba(255, 255, 255, 0.05); display: flex; justify-content: center; align-items: center; }
+        .profile-img-blank svg { width: 50px; height: 50px; fill: #888da8; }
         h1 { font-size: 24px; font-weight: 700; color: #00f2fe; text-shadow: 0 0 10px rgba(0, 242, 254, 0.3); margin-bottom: 5px; }
         .tag { font-size: 13px; color: #ff007f; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 15px; display: block; }
         .quote { font-size: 14px; color: #a0a5c1; font-style: italic; margin-bottom: 25px; line-height: 1.5; }
@@ -22,14 +23,18 @@
         .btn { display: block; width: 100%; padding: 14px; margin-bottom: 12px; border-radius: 10px; background: transparent; color: #00f2fe; text-decoration: none; font-weight: 600; font-size: 15px; border: 1px solid #00f2fe; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(0, 242, 254, 0.1); }
         .btn:hover { background: #00f2fe; color: #0d0e15; box-shadow: 0 0 20px rgba(0, 242, 254, 0.4); }
         .btn-primary { color: #ff007f; border-color: #ff007f; box-shadow: 0 0 10px rgba(255, 0, 127, 0.1); }
-        .primary:hover { background: #ff007f; color: #fff; box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); }
+        .btn-primary:hover { background: #ff007f; color: #fff; box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <!-- এটি সিআর সেভেনের অফিসিয়াল স্টেবল ইমেজ ইউআরএল -->
-        <img src="https://images.football365.com/content/images/2024/02/Cristiano-Ronaldo-Al-Nassr.jpg" alt="Cristiano Ronaldo" class="profile-img">
+        <!-- ফাঁকা ইউজার আইকন (কোনো লিঙ্কের ঝামেলা নেই) -->
+        <div class="profile-img-blank">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5-4-8-4z"/>
+            </svg>
+        </div>
         
         <h1>Tawhid</h1>
         <span class="tag">TARAFDER "X"7</span>
