@@ -1,1 +1,51 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawhid | Profile</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0d0e15; color: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; background-image: radial-gradient(circle at center, #1a1c2e 0%, #0d0e15 100%); }
+        .card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(0, 242, 254, 0.2); padding: 40px 30px; border-radius: 20px; width: 100%; max-width: 400px; text-align: center; box-shadow: 0 0 30px rgba(0, 242, 254, 0.1); backdrop-filter: blur(10px); position: relative; }
+        .card::before { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, #00f2fe, #4facfe, #ff007f); border-radius: 22px; z-index: -1; opacity: 0.3; filter: blur(10px); }
+        .profile-img { width: 110px; height: 110px; border-radius: 50%; border: 3px solid #00f2fe; margin-bottom: 20px; box-shadow: 0 0 20px rgba(0, 242, 254, 0.5); object-fit: cover; }
+        h1 { font-size: 24px; font-weight: 700; color: #00f2fe; text-shadow: 0 0 10px rgba(0, 242, 254, 0.3); margin-bottom: 5px; }
+        .tag { font-size: 13px; color: #ff007f; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 15px; display: block; }
+        .quote { font-size: 14px; color: #a0a5c1; font-style: italic; margin-bottom: 25px; line-height: 1.5; }
+        .info-box { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 15px; margin-bottom: 25px; text-align: left; font-size: 14px; color: #cdcfe0; }
+        .info-item { margin-bottom: 8px; display: flex; justify-content: space-between; }
+        .info-item:last-child { margin-bottom: 0; }
+        .info-label { color: #888da8; }
+        .btn { display: block; width: 100%; padding: 14px; margin-bottom: 12px; border-radius: 10px; background: transparent; color: #00f2fe; text-decoration: none; font-weight: 600; font-size: 15px; border: 1px solid #00f2fe; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(0, 242, 254, 0.1); }
+        .btn:hover { background: #00f2fe; color: #0d0e15; box-shadow: 0 0 20px rgba(0, 242, 254, 0.4); }
+        .btn-primary { color: #ff007f; border-color: #ff007f; box-shadow: 0 0 10px rgba(255, 0, 127, 0.1); }
+        .btn-primary:hover { background: #ff007f; color: #fff; box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- এখানে আপনি চাইলে আপনার ছবি ব্যবহার করতে পারেন, আপাতত একটি ডেমো দেওয়া হলো -->
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400" alt="Profile" class="profile-img">
+        
+        <h1>Tawhid (Tahmid)</h1>
+        <span class="tag">TARAFDER "X"7</span>
+        
+        <p class="quote">"বেলা ফুরাবার আগে ফিরে এসো রবের পথে❤️"</p>
+        
+        <div class="info-box">
+            <div class="info-item"><span class="info-label">📍 Location:</span> <span>Dhaka, Bangladesh</span></div>
+            <div class="info-item"><span class="info-label">🎂 Birthday:</span> <span>31st January</span></div>
+            <div class="info-item"><span class="info-label">❤️ Status:</span> <span>Single</span></div>
+            <div class="info-item"><span class="info-label">🎮 Favorite Game:</span> <span>FC Mobile</span></div>
+        </div>
+
+        <!-- আপনার ফেসবুক প্রোফাইলের সঠিক লিঙ্কটি এখানে বসিয়ে দিতে পারেন -->
+        <a href="https://www.facebook.com/share/1RpkehKEji/" target="_blank" class="btn btn-primary">Facebook Profile</a>
+        <a href="https://m.me/share/1RpkehKEji/" target="_blank" class="btn">Message Me</a>
+    </div>
+
+</body>
+</html>
